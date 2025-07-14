@@ -3,6 +3,7 @@ import { Button } from '../../components/ui/button';
 import { Card, CardContent } from '../../components/ui/card';
 import { QuizResult } from '../../types/quiz';
 import { submitQuizData } from '../../utils/quizLogic';
+import star from '../../assets/images/star.svg';
 
 interface ResultScreenProps {
   result: QuizResult;
@@ -74,7 +75,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({
         <img
           className="w-[22px] h-[22px]"
           alt="Star"
-          src="src/assets/images/star.svg"
+          src={star}
         />
 
         {/* Result message */}

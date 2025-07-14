@@ -3,6 +3,7 @@ import { ProgressIndicator } from '../../components/ProgressIndicator';
 import { QuizCard } from '../../components/QuizCard';
 import { quizQuestions } from '../../data/quizData';
 import { gsap } from 'gsap';
+import star from '../../assets/images/star.svg';
 
 interface QuizScreenProps {
   currentQuestion: number;
@@ -55,7 +56,7 @@ export const QuizScreen: React.FC<QuizScreenProps> = ({
           <img
             className="w-[22px] h-[22px]"
             alt="Star"
-            src="src/assets/images/star.svg"
+            src={star}
           />
 
           <div
