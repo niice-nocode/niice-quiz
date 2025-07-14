@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Button } from '../../components/ui/button';
 import { gsap } from 'gsap';
+import star from '../../assets/images/star.svg';
 
 interface StartScreenProps {
   onStart: () => void;
@@ -51,7 +52,7 @@ export const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
         <img
           className="w-[22px] h-[22px]"
           alt="Star"
-          src="/src/assets/images/star.svg"
+          src={star}
         />
         <h1
           ref={headlineRef}

@@ -1,4 +1,5 @@
 import React from 'react';
+import star from '../../assets/images/star.svg';
 
 export const ThankYouScreen: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const ThankYouScreen: React.FC = () => {
         <img
           className="w-[22px] h-[22px]"
           alt="Star"
-          src="src/assets/images/star.svg"
+          src={star}
         />
         
         <h1 className="font-heading-h5 font-[number:var(--heading-h5-font-weight)] text-white text-[length:var(--heading-h5-font-size)] lg:text-4xl tracking-[var(--heading-h5-letter-spacing)] leading-[var(--heading-h5-line-height)] [font-style:var(--heading-h5-font-style)]">
